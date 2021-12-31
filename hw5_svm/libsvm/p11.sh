@@ -1,0 +1,1 @@
+./svm-train -s 0 -t 0 -c 10 satimage_5vo.scale
