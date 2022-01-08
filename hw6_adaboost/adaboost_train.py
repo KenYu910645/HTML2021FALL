@@ -96,6 +96,11 @@ for t in range(T):
     # calculate et
     e_t = w_e/(sum(u))
     print(f"e_t = {e_t}")
+    if e_t >= 0.5:
+        print("GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
+        print("GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
+        print("GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG")
+
     # caculate dia_t(diamond_t)
     dia_t = math.sqrt((1-e_t)/e_t)
     # Update u
@@ -106,6 +111,7 @@ for t in range(T):
             u[data_i] /= dia_t
         else:
             u[data_i] *= dia_t
+    # print(f"dia_t = {dia_t}")
     # print(f"sum(u) = {sum(u)}")
 
     # Calcuate alpha_t
