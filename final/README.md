@@ -9,6 +9,15 @@ https://www.kaggle.com/competitions/html2021final
 A telephone company wants to predict whether the customers would stop using its services and why the customers stop using its services. This is quite important since if we know whether/why customers stop using the services beforehand, the company can try to keep the customers (and retain the revenue) by taking some proper marketing actions.
 Now, having collected some data from telephone company, the CTO wants to challenge you, a new coming data scientist in the company, to help with the task. You need to fight for the most accurate prediction on the score board. Then, you need to submit a comprehensive report that describe not only the recommended approaches, but also the reasoning behind your recommendations. Well, let's get started!
 
+## Submission 
+Submission Limits At most 5 submissions everyday   
+The labels provided by us are in string format. However, you should transform the string format label to numeric label as the mapping table shown below.   
+| Label in string | Label in number | | ------------- | ---------------- | | No Churn | 0 | | Competitor | 1 | | Dissatisfaction | 2 | | Attitude | 3 | | Price | 4 | | Other | 5 |  
+**For every customer ID in the Test_IDs.csv**, submission files should contain two columns: Customer ID and Churn Category. The file should contain a header and have the following format: Customer ID,Churn Category 9938-EKRGF,0 ...  
+
+## Evaluation Metric
+For the evaluation, we calculate F1-scores with respect to each category and then take average on the six F1-scores. For the introduction and definition of the F1-score, please refer to https://en.wikipedia.org/wiki/F-score
+
 ## Dataset Description
 
 demographics.csv: demographical information about customers  
@@ -79,3 +88,26 @@ Test_IDs.csv: contains Customer ID in the testing dataset
 
 Train_IDs.csv: contains Customer ID in the training dataset  
 
+## Report
+Please upload one report per team electronically on Gradescope. You do not need to submit a hard-copy. The report is due at 13:00 on 01/20/2022.  
+
+## Teams
+By default, you are asked to work as a team of size THREE. A one-person or two-people team is allowed only if you are willing to be as good as a three-people team. It is expected that all team members share balanced work loads. Any form of unfairness, such as the intention to cover other members' work, is considered a violation of the honesty policy and will cause some or all members to receive zero or negative score.  
+
+## Algorithms
+You can use any algorithms, regardless of whether they were taught in class.  
+
+## Packages
+You can use any software packages for the purpose of experiments, but please provide proper references in your report for reproducibility.  
+
+## Source Code
+You do not need to upload your source code for the final project. Nevertheless, please keep your source code until 03/31/2022 for the graders' possible inspections.  
+
+## Grade
+The final project is worth $1000$ points. That is, it is equivalent to $2.5$ usual homework sets. At least $900$ of them would be reserved for the report. The other $100$ may depend on some minor criteria such as your competition results, your discussions on the boards, your work loads, etc..  
+
+## Collaboration
+The general collaboration policy applies. In addition to the competitions, we still encourage collaborations and discussions between different teams.  
+
+## Data Usage
+You can use only the data sets provided in class for your experiments, and you should use the data sets properly. Getting other forms of the data sets is strictly prohibited and is considered a serious violation of the honesty policy. Using any tricks to query the labels of the test set is also strictly prohibited.  
